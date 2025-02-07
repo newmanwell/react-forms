@@ -37,8 +37,8 @@ const SignUpForm = (props) => {
       <h2>Sign Up</h2>
       { error && <p>{ error }</p> }
       <form onSubmit={ handleSubmit }>
-        <input placeholder="username" value={ username } onChange={(event) => { setUsername(event.target.value) }}/>
-        <input placeholder="password" type="password" value={password} onChange={(event) => { setPassword(event.target.value) }}/>
+        <input placeholder="username" value={ username } minLength="8" onChange={(event) => { setUsername(event.target.value) }}/>
+        <input placeholder="password" type="password" value={password} minLength="9" onChange={(event) => { setPassword(event.target.value) }}/>
         <button>Submit</button>
       </form>
     </section>
