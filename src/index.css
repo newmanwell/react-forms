@@ -21,3 +21,7 @@ form {
   display: flex;
   flex-direction: column;
 }
+
+span {
+  font-weight: bold;
+}
